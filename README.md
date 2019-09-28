@@ -4,6 +4,9 @@ This program listens for incoming ssh connections and logs the ip
 address, username, and password used. This was written to gather
 rudimentary intelligence on brute force attacks.
 
+## output only username&passwords
+USE : awk '{print $7,$8}' ssh-honeypot.log > passlist
+
 ## Quickstart
 
 ### Linux
