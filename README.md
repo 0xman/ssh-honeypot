@@ -60,6 +60,11 @@ as root:
 	
 Beware that this chowns the logfile to the user specified as well.
 
+## running the honeypot on port 22
+Change the port of your ssh server from 22 to something like 2222 - check out this for help!
+
+$ https://www.godaddy.com/help/changing-the-ssh-port-for-your-linux-server-7306
+
 ## Changing the Banner
 
 List available banners
