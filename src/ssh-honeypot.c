@@ -1,4 +1,4 @@
-/* ssh-honeypot -- by Daniel Roberson (daniel(a)planethacker.net) 2016-2017
+/* ssh-honeypot -- by Daniel Roberson (daniel(a)planethacker.net) 2016-2017 
  */
 
 #include <stdio.h>
@@ -152,7 +152,7 @@ static int handle_ssh_auth (ssh_session session) {
   ip = get_ssh_ip (session);
 
   if (ssh_handle_key_exchange (session)) {
-    log_entry ("%s Error exchanging keys: %s", ip, ssh_get_error (session));
+   // log_entry ("%s %s" (session));
     return -1;
   }
 
@@ -332,18 +332,18 @@ int main (int argc, char *argv[]) {
       exit (EXIT_SUCCESS);
     }
 
-    printf ("ssh-honeypot %s by %s started on port %d. PID %d\n",
-	    VERSION,
-	    AUTHOR,
-	    port,
-	    getpid());
+  // printf ("ssh-honeypot %s by %s started on port %d. PID %d\n",
+	//    VERSION,
+	 //   AUTHOR,
+	  //  port,
+	   // getpid());
   }
 
-  log_entry ("ssh-honeypot %s by %s started on port %d. PID %d",
-	     VERSION,
-	     AUTHOR,
-	     port,
-	     getpid());
+ // log_entry ("ssh-honeypot %s by %s started on port %d. PID %d",
+	 //    VERSION,
+	 //    AUTHOR,
+	 //    port,
+	  //   getpid());
 
   session = ssh_new ();
   sshbind = ssh_bind_new ();
