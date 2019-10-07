@@ -28,8 +28,11 @@ static struct banner_info_s {
   {"",  "No banner"},
   {"OpenSSH_5.9p1 Debian-5ubuntu1.4", "Ubuntu 12.04"},
   {"OpenSSH_7.2p2 Ubuntu-4ubuntu2.1", "Ubuntu 16.04"},
+  {"OpenSSH_7.6p1 Ubuntu-4ubuntu0.3", "Ubuntu 18.04"},
   {"OpenSSH_6.6.1",                   "openSUSE 42.1"},
-  {"OpenSSH_6.7p1 Debian-5+deb8u3",   "Debian 8.6"}
+  {"OpenSSH_6.7p1 Debian-5+deb8u3",   "Debian 8.6"},
+  {"OpenSSH_7.5",                     "pfSense 2.4.4-RELEASE-p3"},
+  {"dropbear_2014.63",                "dropbear 2014.63"},
 };
 
 const size_t num_banners = sizeof banners / sizeof *banners;
