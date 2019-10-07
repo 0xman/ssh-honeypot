@@ -1,5 +1,5 @@
 /* ssh-honeypot -- by Daniel Roberson (daniel(a)planethacker.net) 2016-2017 - 
-* removed some log features - to output only username&passwords
+* removed some log features 
 * use : awk '{print $7,$8}' ssh-honeypot.log > passlist
 */
 
