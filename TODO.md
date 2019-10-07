@@ -1,8 +1,7 @@
 - gather more SSH banners ✓
 - log parsing scripts ✓
-
--- geolocation
--- graphs/statistics
+- geolocation
+- graphs/statistics
 - canaries
 - autoconf
 - manpage
